@@ -108,34 +108,92 @@ main {
 }
 
 .page-wrapper {
-    max-width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-section {
-    margin: 25px 0;
-    padding: 10px 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-between;
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
-.page-section>h2 {
-    flex: 0 0 20%;
-    text-align: right;
-    padding-right: 15px;
-    border-right: 4px solid var(--primary);
-    font-size: 4vw;
-    line-height: 1.1;
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid var(--primary);
+  font-size: 4vw;
+  line-height: 1.1;
 }
 
-.page-section>div {
-    flex: 0 0 77%;
+.page-section > div {
+  flex: 0 0 77%;
 }
 
 .page-section p {
-    margin-bottom: 20px;
-    font-size: xx-large;
+  margin-bottom: 20px;
+  font-size: xx-large;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  border: 5px solid var(--secondary);
+  background-color: var(--primary);
+  color: var(--tertiary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+  background-size: contain;
+}
+
+.flex-item:first-child {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+.flex-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-item div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-item h3 {
+  font-size: 1.6rem;
+}
+
+.example {
+  background-image: url("../images/example.png");
+}
+.example-1 {
+  background-image: url("../images/example-1.png");
+}
+.example-2 {
+  background-image: url("../images/example-2.png");
+}
+.example-3 {
+  background-image: url("../images/example-3.png");
+}
+.example-4 {
+  background-image: url("../images/example-4.png");
 }
