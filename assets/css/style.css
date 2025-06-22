@@ -63,3 +63,42 @@ nav a:hover {
     background-size: 100% 100%;
     color: var(--tertiary);
 }
+
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.banner {
+    background: rgb(100, 120, 68);
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: 20% 12%;
+    background-blend-mode: soft-light;
+    min-height: 50vh;
+    color: var(--light);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+.banner div {
+    flex: 0 0 90%;
+}
+
+.banner blockquote {
+    color: var(--light);
+    font-style: italic;
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    display: inline;
+}
+.banner blockquote cite {
+  display: block;
+  margin-top: 0.5em;
+  text-align: right;
+  font-style: normal;
+}
